@@ -17,7 +17,7 @@ public class Exam0340 {
     System.out.println(9.999999f);
     System.out.println("----------------------------");
 
-    //유효자릿수가 7자리를 넘어가는 경우 값이 잘려서 저장될 수 있다.
+    //유효자릿수가 7자리를 넘어가는 경우 뒷자리 값이 잘려버린다음 저장될 수 있다.
     System.out.println(987654321.1234567f);
     System.out.println(9.876543211234567f);
     System.out.println(987654321123456.7f);
