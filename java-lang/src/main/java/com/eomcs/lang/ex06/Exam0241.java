@@ -28,3 +28,4 @@ public class Exam0241 {
 }
 
 //Fianl 은 값을 증명해야돼,  근데 이 넘이라는게 잇음 enum 근데 신경쓰지마 아직은 
+//sldkfjsdlkfjdslkfj
