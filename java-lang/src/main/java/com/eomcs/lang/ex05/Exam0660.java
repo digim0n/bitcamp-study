@@ -22,3 +22,4 @@ public class Exam0660 {
 
   }
 }
+ // --i => 먼저빼고 현재 i 놓는다

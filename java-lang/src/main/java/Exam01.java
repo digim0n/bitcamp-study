@@ -1,4 +1,4 @@
-package a.b.c.d;
+package com.bitcamp.board;
 class A {}
 class B {}
 class C {}

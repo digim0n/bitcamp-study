@@ -36,7 +36,7 @@ public class Exam0410 {
     System.out.println('\101'); // A
     System.out.println('\122'); // R
     System.out.println('\377'); // ÿ
-    //System.out.println('\477'); // 컴파일 오류!    ----> 요딴 코드 쓰는사람 상종하지 말자...상종못할 사람 구분 하는 코드
+    //System.out.println('\477'); // 컴파일 오류!
 
     // 유니코드 값을 직접 적는 경우는
     // 보통 키보드로 문자를 직접 입력할 수 없을 때이다.

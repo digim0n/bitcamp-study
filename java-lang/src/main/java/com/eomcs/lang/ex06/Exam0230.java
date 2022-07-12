@@ -38,7 +38,7 @@ public class Exam0230 {
       default:
     }
 
-    // String 값을 switch와 case의 값으로 사용할 수 있다.
+    // String 값을 switch와 case의 값으로 사용할 수 있다. = 문자열 가능하다1@!@!@!@!@
     String str = "hello";
     switch (str) {
       // case 의 값으로 String 가능하다.

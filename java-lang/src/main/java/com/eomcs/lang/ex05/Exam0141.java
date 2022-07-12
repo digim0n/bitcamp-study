@@ -11,7 +11,7 @@ public class Exam0141 {
     int j = 2;
     float r = i / j; // int와 int의 연산 결과는 항상 int이다.
     // 따라서 r 변수에 넣기 전에 
-    // 이미 결과는 정수 2가 된다.
+    // 이미 결과는 정수 2가 된다. 왜냐면 나머지값은 갖다 버려야되니깐 그것도왜냐면 int는 정수타입이니깐
     // 정수 2를 float 변수에 넣으면 
     // 출력할 때 2.0이 된다.
     System.out.println(r);

@@ -17,6 +17,7 @@ public class Exam0930 {
     // float ==> int 
     float f = 3.14f;
     int i = (int)f;  // 소수점 이하가 제거된다.
+      //형변환???? int i = (int)f; 소수점 이하가 제거된다.
     System.out.println(i);
 
     // double ==> long

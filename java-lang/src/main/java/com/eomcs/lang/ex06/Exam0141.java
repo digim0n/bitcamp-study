@@ -7,7 +7,7 @@ public class Exam0141 {
     int age = 17;
 
     // 잘못 사용한 예:
-    // => else 문만 단독으로 사용할 수 없다.
+    // => else 문만 단독으로 사용할 수 없다!!!!!!! 
     //    항상 if 문과 짝을 이뤄 사용한다.
     //    else
     //      System.out.println("컴파일 오류!");
@@ -18,7 +18,7 @@ public class Exam0141 {
     //      System.out.println("성인입니다.");
     //    System.out.println("--------------------------");
     //    else
-    //      System.out.println("미성년입니다.");
+    //      System.out.println("미성년입니다."); 요렇게 하면 if문이 없는 else 가 된다 중괄호로 나눠준것도 아니잖아 ㅡㅡ;
 
 
   }

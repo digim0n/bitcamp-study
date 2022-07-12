@@ -34,3 +34,5 @@ public class Exam0221 {
     keyScan.close();
   }
 }
+
+// switch (사용자 입력번호) -> break를 만날때까지 실행한다.

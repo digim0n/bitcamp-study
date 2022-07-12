@@ -18,7 +18,7 @@ public class Exam0223 {
         break;
       case 60:
       case 50:
-      case 40:
+      case 40:          // -----> 케이스는 이렇게 나열이 가능하구낭,,,,,,, ^^하면됌
         System.out.println("C");
         break;
       default:

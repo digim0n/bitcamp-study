@@ -1,12 +1,12 @@
 package com.eomcs.lang.ex06;
 
-//# 흐름 제어문 - do ~ while 반복문
+//# 흐름 제어문 - do ~ while 반복문  -> 이건 님들이보셈 
 //
 public class Exam0340 {
   public static void main(String[] args) {
     int i = 0;
 
-    // 1부터 10까지 출력하기
+    // 1부터 10까지 출력하고싶으면??
     do
       System.out.println(++i);
     while (i < 10);

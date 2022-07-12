@@ -11,7 +11,7 @@ public class Exam0161 {
     int age = keyScan.nextInt();
 
     // if ~ else ~는 한 문장이기 때문에
-    // if ~ else ~ 만 있다면 블록으로 묶지 않아도 된다.
+    // if ~ else ~ 만 있다면 블록으로 묶지 않아도 된다. 
     if (age < 8)
       System.out.println("아동입니다.");
     else
@@ -29,3 +29,6 @@ public class Exam0161 {
     keyScan.close();
   }
 }
+//if else는 한문장 !!!if else는 한팀 !!!
+
+// 너무 지저분하니깐 조정해서 나온거지 else if 라는 문법이 있는건 아니다 !@!@!@!@

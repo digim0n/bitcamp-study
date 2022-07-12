@@ -34,7 +34,7 @@ public class Exam0140 {
     else
       System.out.println("미성년입니다.4");
 
-    // 한 문장일 때는 블록으로 묶지 않아도 된다.
+    // 한 문장일 때는 블록으로 묶지 않아도 된다. 근데 구글 방식은 한문장 이어도 블록으로 묶는 방식이니 사용하도록 하자.
     if (age >= 19)
       System.out.println("성인입니다.5");
     else {
