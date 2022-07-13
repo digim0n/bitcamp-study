@@ -12,6 +12,7 @@ public class Exam0411 {
       System.out.println(i);
       i++;
     }
-
+   // for문을 종료한 후에도 i 변수를 사용할수 있다.
+   System.out.println(i);
   }
 }
