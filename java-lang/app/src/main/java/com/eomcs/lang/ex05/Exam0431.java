@@ -5,14 +5,14 @@ package com.eomcs.lang.ex05;
 public class Exam0431 {
   public static void main(String[] args) {
     // 음수를 이동:
-    // - 왼쪽 빈자리는 0으로 채운다. 근데 꺽쇠 3개는 양수든 음수든 상관없이 0으로 다 채운다다ㅏㅏ다다다ㅏㅏ
+    // - 왼쪽 빈자리는 0으로 채운다.
     //
 
     int i = -87; // [11111111111111111111111110101001]
 
     System.out.println(i);
 
-    System.out.println(i >>> 1); 
+    System.out.println(i >>> 1);
     // [ 1111111111111111111111111010100]1
     // [01111111111111111111111111010100]1      => 2147483604
 

@@ -18,7 +18,7 @@ public class Exam0440 {
     // 배열 변수 선언과 동시에 배열 초기화를 실행할 때는  new String[] 을 생략할 수 있다. 
     String[] names = {"홍길동", "임꺽정", "유관순", "윤봉길", "안중근"};
 
-    for (int i = 0; i < names.length; i++) // 배열 갯수 알아내는것 배열이름name.배열갯수length
+    for (int i = 0; i < names.length; i++)
       System.out.println(names[i]);
 
   }

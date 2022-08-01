@@ -11,9 +11,9 @@ public class Exam0322 {
     // => break 사용 전
     count = 0;
     sum = 0;
-    while (count < 100) {   // --> 0부터 99까지 가야되는 상황일때 
-      count++;  //--> 카운트가 50까지는 합하고
-      if (count > 50) // 50을 넘어가면 합을 수행하지 않지만 100까지 계속 컨디뉴한다 조건문으로 가기를 반복한다.
+    while (count < 100) {
+      count++;
+      if (count > 50) // 50을 넘어가면 합을 수행하지 않지만 100까지 계속 반복한다.
         continue;
       sum += count;
     }
@@ -21,13 +21,13 @@ public class Exam0322 {
 
     System.out.println("------------------------");
 
-    // => break 사용 하면 위꺼보다 더 깔끔하다.
+    // => break 사용 후
     count = 0;
     sum = 0;
     while (count < 100) {
       count++;
       if (count > 50)
-        break; // 즉시 반복문을 종료하고 나가버려서 깔끔스트다.
+        break; // 즉시 반복문을 종료하고 나간다.
       sum += count;
     }
     System.out.printf("count=%d, sum=%d\n", count, sum);

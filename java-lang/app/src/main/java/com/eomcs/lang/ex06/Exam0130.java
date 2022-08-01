@@ -25,7 +25,7 @@ public class Exam0130 {
 
     boolean b;
     if (b = true) System.out.println("된다!");
-  }  // 트루란 값을 비에 집어넣어 그리고 실행 !
+  }
 }
 
 

@@ -15,7 +15,6 @@ public class Exam0110 {
       String line = null;
       while ((line = in.readLine()) != null) {
         System.out.println(line);
-        
       }
     }
   }

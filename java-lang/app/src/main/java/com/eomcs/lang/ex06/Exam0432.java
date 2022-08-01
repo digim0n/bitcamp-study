@@ -10,7 +10,7 @@ public class Exam0432 {
         for (int j = 1; j <= i; j++) {
           System.out.print(j + " ");
           if (j == 5)
-            break loop1; // 라벨로 지정한 문장을 나간다. (루프로 묶은 라벨문) : 가까운 반복문이 아닌 바깥쪽 반복문을 나가고 싶을때 루프로 묶어서 쓴다.
+            break loop1; // 라벨로 지정한 문장을 나간다.
         }
         System.out.println();
       }

@@ -4,24 +4,67 @@
  */
 package com.bitcamp.board;
 
+import com.bitcamp.board.handler.BoardHandler;
+import com.bitcamp.board.handler.MemberHandler;
+import com.bitcamp.util.Prompt;
+
 public class App {
 
   public static void main(String[] args) {
     welcome();
-    loop: while (true) {
-      displayMenu();
-      int menuNo = Prompt.inputInt("메뉴를 선택하세요[1..3](0: 종료) "); // 프롬프트에 인풋인트 - 인트값바로 호출 메세지를 출력하며 인풋값을 받는다.
-      displayLine();
 
-      switch (menuNo) {
-        case 0: break loop;
-        case 1: BoardHandler.processList(); break;
-        case 2: BoardHandler.processDetail(); break;
-        case 3: BoardHandler.processInput(); break;
-        default: System.out.println("메뉴 번호가 옳지 않습니다!");
+    // 인스턴스를 생성할 때 생성자가 원하는 값을 반드시 줘야 한다.
+    // 주지 않으면 컴파일 오류이다!
+    //
+    BoardHandler boardHandler = new BoardHandler("게시판");
+    BoardHandler readingHandler = new BoardHandler("독서록");
+    BoardHandler visitHandler = new BoardHandler("방명록");
+    BoardHandler noticeHandler = new BoardHandler("공지사항");
+    BoardHandler diaryHandler = new BoardHandler("일기장");
+    MemberHandler memberHandler = new MemberHandler();
+
+    loop: while (true) {
+
+      // 메인 메뉴 출력
+      System.out.println("메뉴:");
+      System.out.println("  1: 게시판");
+      System.out.println("  2: 독서록");
+      System.out.println("  3: 방명록");
+      System.out.println("  4: 공지사항");
+      System.out.println("  5: 일기장");
+      System.out.println("  6: 회원");
+      System.out.println();
+
+      try {
+        int mainMenuNo = Prompt.inputInt("메뉴를 선택하세요[1..6](0: 종료) ");
+
+        switch (mainMenuNo) {
+          case 0: break loop;
+          case 1: // 게시판
+            boardHandler.execute();
+            break;
+          case 2: // 독서록
+            readingHandler.execute();
+            break;
+          case 3: // 방명록
+            visitHandler.execute();
+            break;
+          case 4: // 공지사항
+            noticeHandler.execute();
+            break;
+          case 5: // 일기장
+            diaryHandler.execute();
+            break;
+          case 6: // 회원
+            memberHandler.execute();
+            break;
+          default: System.out.println("메뉴 번호가 옳지 않습니다!");
+        } // switch
+      } catch (Exception ex) {
+        System.out.println("입력 값이 옳지 않습니다.");
       }
 
-      displayBlankLine();
+
     } // while
 
     System.out.println("안녕히 가세요!");
@@ -34,30 +77,11 @@ public class App {
     System.out.println("환영합니다!");
     System.out.println();
   }
-
-  static void displayMenu() {
-    System.out.println("메뉴:");
-    System.out.println("  1: 게시글 목록");
-    System.out.println("  2: 게시글 상세보기");
-    System.out.println("  3: 게시글 등록");
-    System.out.println();
-  }
-
-  static void displayLine() {
-    System.out.println("=========================================");
-  }
-    // 사용자로부터 메뉴 번호를 입력 받기
-    // 방법1:
-    /*
-    String input = keyboardInput.nextLine();
-    return Integer.parseInt(input);
-    */
-    // 방법2:
-    // inputInt가 읽는다. 인트 호출하는 애다.
-
-  
-
-  static void displayBlankLine() {
-    System.out.println(); // 메뉴를 처리한 후 빈 줄 출력
-  }
 }
+
+
+
+
+
+
+

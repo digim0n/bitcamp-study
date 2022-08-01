@@ -14,8 +14,8 @@ public class Exam0321 {
     sum = 0;
     while (count < 100) {
       count++;
-      if ((count & 1) == 0) { // count & 1 ==> count & 0x01 ==> count % 2 //// ---> 카운트의 맨끝 1비트 값이 0이면짝수이다.
-        sum += count;    // 그럼 합쳐라
+      if ((count & 1) == 0) { // count & 1 ==> count & 0x01 ==> count % 2
+        sum += count;
       }
     }
     System.out.printf("count=%d, sum=%d\n", count, sum);
@@ -28,9 +28,9 @@ public class Exam0321 {
     while (count < 100) {
       count++;
       if (count % 2 == 1)
-        continue; // 다음 문장을 실행하지 않고 즉시 조건 검사로 이동한다. --> 값을 합쳐라 근데 홀수라면 건너뛰고 넘어가-
-    }  // 컨디뉴 -> 밑으로가지말고조건문으로돌아가라
-    sum += count;
+        continue; // 다음 문장을 실행하지 않고 즉시 조건 검사로 이동한다.
+      sum += count;
+    }
     System.out.printf("count=%d, sum=%d\n", count, sum);
   }
 }

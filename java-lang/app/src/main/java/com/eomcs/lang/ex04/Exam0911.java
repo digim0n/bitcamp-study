@@ -27,8 +27,6 @@ public class Exam0911 {
     f = s; // short(2) ==> float(4). 값을 그대로 저장. 
     System.out.println(f);
 
-
-  //범위 넘어가는애들은 짤린다   ( 유효 자릿수 넘어가면 짤린다 )
     f = i; // int(4) ==> float(4). 
     // 유효자릿수를 넘는 정수는 짤린다.
     System.out.println(f);
