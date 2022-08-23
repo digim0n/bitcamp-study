@@ -1,14 +1,7 @@
-# 031. 기존 List 구현체를 자바 컬렉션 API로 교체하기: java.util 패키지의 클래스 사용
+# 044. 통신 방식을 Stateful에서 Stateless로 변경하기
 
 ## 작업 내용
 
-### 1단계 - 기존의 목록 관련 클래스를 자바 컬렉션 API로 교체한다.
+### 1단계 - 한 번 연결에 한 번의 요청만 처리한다.
 
-- com.bitcamp.util.List 인터페이스 삭제
-- com.bitcamp.util.AbstractList 추상 클래스 삭제
-- com.bitcamp.util.ObjectList 클래스 삭제
-- com.bitcamp.util.LinkedList 클래스 삭제
-- com.bitcamp.util.Stack 클래스 삭제
-- com.bitcamp.board.dao.BoardDao 클래스 변경
-- com.bitcamp.board.dao.MemberDao 클래스 변경
-- com.bitcamp.board.App 클래스 변경
+- com.bitcamp.board.ServerApp 클래스 변경
